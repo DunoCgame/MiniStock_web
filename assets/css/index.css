@@ -138,7 +138,7 @@ text-shadow: 0px 17px 9px rgba(255,255,255,1);
 
 .MiniStock_Emprendedor {
 /*width: 50%;*/
-background-image:url("/assets/image/Jumbotron.png"); 
+background-image:url("../image/Jumbotron.png"); 
 background-position:center center; 
 background-repeat:no-repeat; 
 background-size: 100% 100%;
@@ -234,7 +234,7 @@ list-style: none;
 /*************************************/
 .MiniStock_Emprendedor_Pos {
   /*width: 50%;*/
-  background-image:url("/assets/image/Pos.png"); 
+  background-image:url("../image/Pos.png"); 
   background-position:center center; 
   background-repeat:no-repeat; 
   background-size: 100% 100%;
@@ -264,6 +264,13 @@ list-style: none;
       -webkit-border-radius: 91px 42px 96px 48px;
       -moz-border-radius: 91px 42px 96px 48px;
 
+}
+
+.link-descarga{
+  text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+      color: white;
 }
 /*******************************************/
 /******************************/
