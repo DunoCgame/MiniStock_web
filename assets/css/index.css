@@ -9,152 +9,174 @@
   --hederfooter:linear-gradient(180deg, rgba(20,37,62,1) 0%, rgba(7,30,111,1) 100%, rgba(0,39,130,1) 100%);
 }
 
-body { background-color:#293553; }
+body { 
+
+display: grid;
+grid-template-columns: 1fr;
+ grid-template-rows: 80px 1fr 60px;
+  min-height: 100vh;
+grid-column-gap:0px;
+grid-row-gap:0px;
 
 
+background:orange;
+ }
+
+ .oculto_section{
+    display: none;
+}
+
+/*********************************/
 .header{
-  background:var( --hederfooter);
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-
-  height:auto;
+background:yellow;
+}
+.main{
+background: blue;
 
 }
-.image-logo{
+.footer{
+  background: red;
+}
 
-    height: 7rem;
+/****************/
 
+.header {
+    background: var( --hederfooter);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar{
 
 }
-.jumbotron{
-
-  margin: 5px;
+.link{
+  text-decoration: none;
   color:white;
+  font-size: 18px;
+  font-weight: bold;
   padding: 20px;
-  height: 250px;
-
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-/*
-  background: rgb(20,37,62);
-  background: -moz-radial-gradient(circle, rgba(20,37,62,1) 0%, rgba(0,56,189,1) 44%, rgba(7,30,111,1) 70%);
-  background: -webkit-radial-gradient(circle, rgba(20,37,62,1) 0%, rgba(0,56,189,1) 44%, rgba(7,30,111,1) 70%);
-  background: radial-gradient(circle, rgba(20,37,62,1) 0%, rgba(0,56,189,1) 44%, rgba(7,30,111,1) 70%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#14253e",endColorstr="#071e6f",GradientType=1);
-
-*/
-
-
-  background-image: url("../image/Jumbotron.png");
-
-  background-repeat: repeat;
- /* background-position: 100% 100% 100%;*/
-  background-position: 20%;
-  background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.5); /* aquí se establece el color y la opacidad */
-  background-blend-mode: overlay; /* se utiliza para mezclar el fondo y el color */
-
+      cursor: pointer;
 }
-.text-jumbotron {
-    font-size: 50px;
+
+.link:hover{
+text-shadow: 0px 17px 9px rgba(255,255,255,1);
+/*border-bottom: 3px dashed white;*/
+}
+.image-logo {
+    height: 3rem;
+    margin-left: 10px;
+}
+/*********************************************/
+/**slider  main**/
+.slider {
+    width: 100%;
+}
+
+.article {
+    display: none;
+  height: 78vh;
+}
+/**slider   main**/
+/*
+.text-article1{
+    font-size: 100px;
     text-shadow: 0px 2px 8px rgba(119, 201, 248, 1);
     text-align: center;
+    margin-bottom: 15px;
 }
-.sub-text-jumbotron {
+*/
+.sub-text-article1 {
     text-align: center;
     font-size: 20px;
+    line-height: 0.8;
 }
-.icon-tlf {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 50px;
-}
-.telegram {
-    font-size: 26px;
-    color: #005aff;
-    font-weight: bold;
-    background: white;
-    border-radius: 100%;
-}
-
-.whatsapp {
-    color: green;
-    font-weight:bold;
-    background:white;
-    border-radius: 100%;
-    font-size: 26px;
-}
-.num-tlf {
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 15px;
-}
-.infojumbotron {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-}
-
 .btn-descarga {
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
     border-radius: 10px;
+    font-size: 25px;
     font-weight: bold;
     border: 3px solid #4090FF;
     color: #4090FF;
+    width: 300px;
 }
-.btn-descarga:hover{
-     border:3px solid #4090FF;
-    color:#4090FF;
+/******************************/
+.containner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+    background: rgb(0 0 0 / 62%);
+     height: 100%;
+}
+.containner-text>h3{
+    font-size: 50px;
+    text-align: center;
 }
 
-.containner-type-plan{
+.text-article {
+    text-align: center;
+    padding: 26px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+/********article**********/
+/*****************************************/
 
+/*.MiniStock_container {
+  background: grey;
+  display: flex;
+  justify-content: row;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+.MiniStock_Emprendedor {
+/*width: 50%;*/
+background-image:url("/assets/image/Jumbotron.png"); 
+background-position:center center; 
+background-repeat:no-repeat; 
+background-size: 100% 100%;
+
+    
+}
+
+.MiniStock_Emprendedor-image{
+height:100%;
 display: flex;
-flex-direction:row;
+flex-direction: column;
+align-items: center;
 justify-content: center;
-background: #3168A1;
-padding:1px;
+background:rgba(0,50,124,0.5);
+
+}
+.image-logo-descarga-section{
 
 
 }
-.type-plan{
 
-background:#3e5b7a;
-width:50%;
-   margin:5px;
-   padding: 10px;
-
-}
-
-.title-plan {
+.title_pos_descarga {
+    text-align: center;
     color: white;
     margin-bottom: 14px;
     margin-top: 12px;
+    font-size: 39px;
 }
 
-.title-plan{
-  color:white;
+.containner-information-price {
+    background: white;
+    width: 86%;
+    border-radius: 10px;
+    padding: 5px;
 }
-
-.image-type-plan{
-  width:100%;
-   object-fit: cover;
-
-}
-
-
 .containner-price{
-  background: white;
-    width: 100%;
+
     text-align: center;
-   
 }
 .price-plan{
   
@@ -171,6 +193,11 @@ width:50%;
   font-size:30px;
 
 }
+
+.containner-price{
+
+
+}
 .containner-list-item{
 
  /* width:100%;*/
@@ -180,122 +207,70 @@ width:50%;
 .containner-list-item{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
+grid-template-rows: repeat(2, 0fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+}
+
+.list-item-plan>.item{
+padding: 2px;
+list-style: none;
 }
 
 .pos1 { grid-area: 1 / 1 / 2 / 2; }
 .pos2 { grid-area: 1 / 2 / 2 / 3; }
 .pos3 { grid-area: 2 / 1 / 3 / 3; }
 
-
-.list-item-plan{
- display: block;
-}
-.item{
- padding: 5px;
-  list-style: none;
-  font-size: 18px;
-}
-
 .suport-tecnical{
   text-decoration: center;
-  padding: 5px;
+  padding: 4px;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .icon-checkmark{color: green;}
 .icon-cross{color:red;}
-/****************************/
 
-.image-article{
-  width:100%;
-  height: 150px;
-  margin: 8px;
- /* object-fit: cover;*/
-
-}
-
-
-.containner-text{
-
-  display:flex;
-  flex-direction: column; 
-  align-items: center;
-  width: 70%;
-  /* background:red;*/
-   padding: 8px;
-}
-
-
-.article{
-  background: grey;
-  padding:10px;
-  display:flex;
-  flex-direction: row;
-  margin:5px;
-  color:white;
+/*************************************/
+.MiniStock_Emprendedor_Pos {
+  /*width: 50%;*/
+  background-image:url("/assets/image/Pos.png"); 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+  background-size: 100% 100%;
 
 }
-
-.article:nth-child(odd) {
-  background: white;
-  color:black;
-    display:flex;
-  flex-direction: row-reverse;
+.MiniStock_Emprendedor_Pos_image{
+    height:100%;
+    background: rgba(116, 0, 116, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-h3{
-  text-align: center;
-  font-size: 30px;
-}
-
-.text-article{
-  padding: 5px;
-  width: 70%;
-  text-align: center;
-
- /* background: blue;*/
- 
-}
-
-.Aside{
-  background:#15345C; 
-  padding:15px;
- 
-}
-
-.Aside>h2{
-  color:white;
-margin-bottom: 5px; 
-}
-
-.Aside>article{
-
-margin-left:20px;
-display:flex;
- color :white
+/********************/
+.btn-descargar {
+      width: 250px;
+      height: 41px;
+      font-weight: bold;
+      font-size: 17px;
+      color: white;
+      background: #ff8000;
+      border: 4.5px solid white;
+      margin-top: 27px;
+      border-radius: 91px 42px 96px 48px;
+      -webkit-border-radius: 91px 42px 96px 48px;
+      -moz-border-radius: 91px 42px 96px 48px;
 
 }
-.image-article-aside{
-
-}
-
-.ol{
-padding:10px;
-
-}
-.ol>li{
-margin-top:10px;
-display:block;
-
-}
+/*******************************************/
+/******************************/
 
 .footer{
-  padding:20px;
-   background:var(--hederfooter);
-   color:white;
-   text-align: center;
+      padding: 20px;
+    background: var(--hederfooter);
+    color: white;
+    text-align: center;
 }

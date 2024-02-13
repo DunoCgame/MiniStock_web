@@ -1,119 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Mini Stock</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/index.css">
-	<link rel="icon" type="image/png" href="./assets/image/icon.png">
-	<link rel="stylesheet" href="assets/mini-stock-v1.0/style.css">
-</head>
+        <head>
+                <title>Mini Stock</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="assets/css/index.css">
+                <link rel="stylesheet" href="assets/css/MediaQuery.css">
+                <link rel="icon" type="image/png" href="./assets/image/icon.png">
+                <link rel="stylesheet" href="assets/mini-stock-v1.0/style.css">
+        </head>
 <body>
 <header class="header">
-<img class="image-logo" src="assets/image/Logo-MiniStock.png">
-</header>
-	<main class="main">
-	<section class="jumbotron">
-			<h1 class="text-jumbotron">Tu asistente en tu negocio</h1>
-			<p class="sub-text-jumbotron">"Controla tu inventario y aumenta tus ventas con nuestro sistema de ventas integrado"</p>
-			<label class="infojumbotron">
-			<label><span class="icon-tlf icon-whatsapp whatsapp"></span><span class="num-tlf">0414-672-3777</span></label>
-			<label><span class="icon-tlf icon-telegram telegram"></span><span class="num-tlf">0414-672-3777</span></label>
-			</label>
-			<button class="btn-descarga">Descargar</button>
-	</section>
+		<img class="image-logo" src="assets/image/Logo-MiniStock.png">
 
-	<section class="information containner-type-plan">
-	
-		<div class="type-plan">
-			<h3 class="title-plan">Emprendedor</h3>		
-			<!--<img class="image-type-plan" src="assets/image/stock.png" alt="Image-logo">-->
-			<div class="containner-price"><label class="price-plan">
-			250 <span class="type-money">usb/year</span></label>|<span> 10 usb/Mo</span></div>
-			<div class="containner-list-item">
-				<ul class="list-item-plan pos1">
-					<li class="item"><span class="icon-checkmark "></span>Control de Inventario</li>
-					<li class="item"><span class="icon-checkmark "></span>Sistema Pos</li>
-					<li class="item"><span class="icon-checkmark "></span>Gestion de Ventas</li>
-				</ul>
-				<ul class="list-item-plan pos2">
-					<li class="item"><span class="icon-checkmark "></span>Escanner integrado</li>
-					<li class="item"><span class="icon-checkmark "></span>Historias de coneccion</li>
-					<li class="item"><span class="icon-cross"></span>Impresion Termica</li>
-				</ul>
-				<span class="suport-tecnical pos3">
-					<span class="bg">Soporte Tecnico:</span> disponible con un pago mensual de <span class="bg">10 usb</span> mensual
-				</span>
-			</div>
-		</div>
-<!--
-		<div class="type-plan">
-			<h3 class="title-plan">Experto</h3>
-			<div class="containner-price"><label class="price-plan">50 <span class="type-money">usb</span></label></div>	
-			<div class="containner-list-item">
-				<ul class="list-item-plan pos1">
-					<li class="item"><span class="icon-checkmark "></span>Control de Inventario</li>
-					<li class="item"><span class="icon-checkmark "></span>Sistema Pos</li>
-					<li class="item"><span class="icon-checkmark "></span>Gestion de Ventas</li>				
-				</ul>
-				<ul class="list-item-plan pos2">
-					<li class="item"><span class="icon-checkmark "></span>Escanner integrado</li>
-					<li class="item"><span class="icon-checkmark "></span>Historias de coneccion</li>
-					<li class="item"><span class="icon-cross"></span>Impresion Termica</li>
-				</ul>
-				<span class="suport-tecnical pos3">
-					<span class="bg">Soporte Tecnico: disponible con el plan</span>
-				</span>
-			</div>
-		</div>-->
+		<nav class="navbar">
+		        <a class="link" onclick="Show_Section('home')">Home</a>
+		        <a class="link" onclick="Show_Section('descarga')">Descargar</a>
+		</nav></header>
+ <main class="main">
+		<section class="container-slide-text slider " id="section1">               
+		   <article class="article">
+		        <section class="containner-text">
+		                <h1 class="text-article1">Tu asistente en tu negocio</h1>
+		                <p class="sub-text-article1">"Controla tu inventario y aumenta tus ventas con nuestro sistema de ventas integrado"</p>
+		                <button class="btn-descarga" onclick="Show_Section('descarga')">Descargar</button>
+		        </section>
+		    </article>           
+		    <article class="article">                    
+		        <section class="containner-text">
+		                <h3>Sistema de Inventaro</h3>
+		                <p class="text-article">
+		                        Apquiere el mejor sistemas de control de productos gestiona tu inventario controlando la cantidad y precio de tus productos aumentando tus ganancias y ventas en función de tus necesidades y las de tus clientes.
+		                </p>                       
+		        </section>
+		     </article>
+		        <article class="article">
+		               
+		                <section class="containner-text">
+		                        <h3>Pos de Venta</h3>
+		                        <p class="text-article">
+		                                Gestiona y controla tus ventas con un sistema de caja a la vanguardia de la tecnología simplifica las transacciones comerciales y elimina los errores en los cálculos de las ventas, lo que significa que puedes dedicar más tiempo a tu negocio. Con su interfaz fácil de usar, podrás aprender rápidamente a utilizar esta herramienta con confianza.
+		                        </p>
+		                </section>
+		        </article>
+		        <article class="article">
+		               
+		                <section class="containner-text">
+		                        <h3>Control Unico</h3>
+		                        <p class="text-article">
+		                                Mantén el control de tu negocios con un sistema unificado gestiona verifica el estado de las cajas registradoras usadas por tus empleados manteniendo estás los tus productos actualizados constante.
+		                        </p>
+		                </section>
+		        </article>         
+		</section>
+                <!--------------->
+		<section class="oculto_section" id="section2">
+			<section class="MiniStock_Emprendedor">
+				<section class="MiniStock_Emprendedor-image">
+						<!-- <h1 class="title_pos_descarga">MiniStock Admin</h1>-->
+						<img class="image-logo-descarga-section"src="assets/image/Logo-MiniStock.png">
+						<div class="containner-information-price">
+							<div class="containner-price">
+								<label class="price-plan">80 <span class="type-money">usb</span></label>
+							</div>
+							<div class="containner-list-item">
+								<ul class="list-item-plan pos1">
+								<li class="item"><span class="icon-checkmark "></span>Control de Inventario</li>
+								<li class="item"><span class="icon-checkmark "></span>Sistema Pos</li>
+								<li class="item"><span class="icon-checkmark "></span>Gestion de Ventas</li>
+								</ul>
+								<ul class="list-item-plan pos2">
+								<li class="item"><span class="icon-checkmark "></span>Escanner integrado</li>
+								<li class="item"><span class="icon-checkmark "></span>Historias de coneccion</li>
+								<li class="item"><span class="icon-cross"></span>Impresion Termica</li>
+								</ul>
+								<span class="suport-tecnical pos3">
+								         <span class="bg">Soporte Tecnico:</span> disponible con un pago mensual de <span class="bg">10 usb</span> mensual
+								</span>
+							</div>
+						</div>
+						<button class="btn-descargar"onclick="">Descargar</button> 
+				</section>
+			</section>
+		<!-------------------->
+				<section class="MiniStock_Emprendedor_Pos">     
+					<section class="MiniStock_Emprendedor_Pos_image">
+					    <img src="assets/image/Logo-POS-MiniStock.png">
+					    <button class="btn-descargar"onclick="">Descargar</button>
+		                        </section>
+				</section>
+		</section>
 
-	</section>
-	<section class="information">
-		<article class="article">
-			<img class="image-article" src="assets/image/stock.png">
-			<section class="containner-text">
-				<h3>Sistema de Inventaro</h3>
-				<p class="text-article">
-					Apquiere el mejor sistemas de control de productos gestiona tu inventario controlando la cantidad y precio de tus productos aumentando tus ganancias y ventas en función de tus necesidades y las de tus clientes.
-				</p>
-			</section>
-		</article>
-		<article class="article">
-			<img class="image-article" src="assets/image/Pos.png">
-			<section class="containner-text">
-				<h3>Pos de Venta</h3>
-				<p class="text-article">
-					Gestiona y controla tus ventas con un sistema de caja a la vanguardia de la tecnología simplifica las transacciones comerciales y elimina los errores en los cálculos de las ventas, lo que significa que puedes dedicar más tiempo a tu negocio. Con su interfaz fácil de usar, podrás aprender rápidamente a utilizar esta herramienta con confianza.
-				</p>
-			</section>
-		</article>
-		<article class="article">
-			<img class="image-article" src="assets/image/Setting.png">
-			<section class="containner-text">
-				<h3>Control Unico</h3>
-				<p class="text-article">
-					Mantén el control de tu negocios con un sistema unificado gestiona verifica el estado de las cajas registradoras usadas por tus empleados manteniendo estás los tus productos actualizados constante.
-				</p>
-			</section>
-		</article>
-	</section>
-	<aside class="Aside" >
-					<h2>Te ofrecemos</h2>
-		<article>
-		<ol  type=">">
-			<li>Control y visibilidad total del inventario en todo momento desde cualquier ubicación</li>
-			<li>Reducción de costos por exceso de inventario o rotura de stock</li>
-			<li>Mejora de la precisión de pedidos a proveedores</li>
-			<li>
-			Mayor eficiencia en el proceso de ventas al contar con la información correcta del inventario disponible</li>
-			<li>Información en tiempo real para una mejor toma de decisiones en cuanto a la gestión del inventario</li>
-		</ol>
-		<img class="image-article-aside" src="assets/image/Logo-MiniStock.png">
-		</article>
-	
-</aside>
-	</main>
-	<footer class="footer"><p>All rights reserved &copy; <span id="data_footer"></span> MiniStock</p></footer>
+ </main>
+ <footer class="footer">
+		<p>All rights reserved &copy; <span id="data_footer">
+		</span> MiniStock</p>   </footer>
+
 </body>
 <script type="text/javascript" src="assets/js/index.js"></script>
 <script src = "assets/mini-stock-v1.0/selection.json"></script>
