@@ -61,7 +61,7 @@ function showSlides() {
        document.getElementsByClassName("article")[slideIndex-1].style.backgroundSize = "100% 100%"
        document.getElementsByClassName("article")[slideIndex-1].style.backgroundRepeat = "no-repea"
 
-        setTimeout(showSlides, 8000); // Change image every 2 seconds
+       setTimeout(showSlides, 8000); // Change image every 2 seconds
 
 
 }
