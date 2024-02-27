@@ -7,19 +7,20 @@ function Show_Section(arg){
 
     if(arg=="descarga"){
             
-            document.getElementById("section1").classList.replace('slider','oculto_section');
+            document.getElementById("section1").classList.replace('container-slide-text','oculto_section');
                     document.getElementById("section2").classList.replace('oculto_section', 'MiniStock_container'); 
-    
+
+
+               
             }
 
     if(arg=="home"){
 
   
    document.getElementById("section2").classList.replace('MiniStock_container','oculto_section');
-       document.getElementById("section1").classList.replace('oculto_section', 'slider');
+       document.getElementById("section1").classList.replace('oculto_section', 'container-slide-text');
 
-
-            
+    
     }
 
 
@@ -66,3 +67,18 @@ function showSlides() {
 
 }
 /**********SLIDER SHOW*****************/
+/*************************************************************/
+/***************************************/
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remover la clase "active" de todos los enlaces
+    navLinks.forEach(link => link.classList.remove('active'));
+    
+    // Agregar la clase "active" al enlace seleccionado
+    this.classList.add('active');
+  });
+});
+
+/***************************************/

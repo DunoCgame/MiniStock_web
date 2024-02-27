@@ -47,21 +47,29 @@ background:yellow;
 .navbar{
 
 }
-.link{
+.nav-link{
   text-decoration: none;
-  color:white;
+  color:grey;
   font-size: 18px;
   font-weight: bold;
   padding: 20px;
       cursor: pointer;
 }
 
-.link:hover{
+
+.nav-link.active {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.nav-link:hover{
 text-shadow: 0px 17px 9px rgba(255,255,255,1);
 /*border-bottom: 3px dashed white;*/
 }
 .image-logo {
-    height: 3rem;
+    height: 6rem;
     margin-left: 10px;
 }
 /*********************************************/
@@ -152,9 +160,9 @@ justify-content: center;
 background:rgba(0,50,124,0.5);
 
 }
-.image-logo-descarga-section{
-
-
+.image-logo-descarga-section {
+    width: 138px;
+   
 }
 
 .title_pos_descarga {
@@ -167,21 +175,18 @@ background:rgba(0,50,124,0.5);
 
 .containner-information-price {
     background: white;
-    width: 86%;
+    width: 94%;
     border-radius: 10px;
-    padding: 5px;
+    padding: 2px;
 }
 .containner-price{
 
     text-align: center;
 }
-.price-plan{
-  
-  font-size:70px;
-  font-weight: bold;
-  color: #99E200;
-
-
+.price-plan {
+    font-size: 56px;
+    font-weight: bold;
+    color: #99E200;
 }
 .bg{
   font-weight: bold;
@@ -268,6 +273,25 @@ list-style: none;
       font-weight: bold;
       font-size: 17px;
       color: white;
+}
+/*******************************************/
+.MiniStock_Start {
+/*width: 50%;*/
+background-image:url("../image/Jumbotron.png"); 
+background-position:center center; 
+background-repeat:no-repeat; 
+background-size: 100% 100%;
+
+    
+}
+
+.MiniStock_Start-image {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(41 137 66 / 50%);
 }
 /*******************************************/
 /******************************/

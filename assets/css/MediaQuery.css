@@ -8,6 +8,7 @@
     margin-bottom: 15px;
 }
 
+
 .MiniStock_container {
   background: grey;
   display: flex;
@@ -32,19 +33,40 @@
 
 .MiniStock_container {
   background: grey;
-  display: flex;
-  flex-direction:row;
+/*  display: flex;
+  flex-direction:row;*/
   width: 100%;
   height: 80vh;
+
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0px;
+
+
 }
 
+/*
 .MiniStock_Emprendedor {
 
-width: 100%;	
+
+background: red;
+
 }
+*/
+
+.MiniStock_Start-image{
+
+ 
+}
+/*
 .MiniStock_Emprendedor_Pos{
-width: 100%;
+
+background:blue;
+
 }
+*/
+
 
 }
 @media only screen and (min-width: 1025px) {
@@ -60,20 +82,29 @@ width: 100%;
 
 .MiniStock_container {
   background: grey;
-  display: flex;
-  flex-direction:row;
+ /* display: flex;
+  flex-direction:row;*/
   width: 100%;
   height: 80vh;
-}
 
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+/*
 .MiniStock_Emprendedor {
 
-width: 50%;	
+
+background: red;
+padding:50px;
 }
 .MiniStock_Emprendedor_Pos{
-width: 50%;
+
+background:blue;
+padding:50px;
 }
 
-
+*/
 
 }
