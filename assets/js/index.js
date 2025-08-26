@@ -7,24 +7,21 @@ function Show_Section(arg){
 
     if(arg=="descarga"){
             
-            document.getElementById("section1").classList.replace('container-slide-text','oculto_section');
-                    document.getElementById("section2").classList.replace('oculto_section', 'MiniStock_container'); 
-
-
-               
-            }
+          document.getElementById("section1").classList.replace('container-slide-text','oculto_section');
+          document.getElementById("section2").classList.replace('oculto_section', 'MiniStock_container'); 
+          
+          document.getElementById("item-link-inicio").classList.remove('active');
+          document.getElementById("item-link-descarga").classList.add("active") 
+    }
 
     if(arg=="home"){
 
   
-   document.getElementById("section2").classList.replace('MiniStock_container','oculto_section');
-       document.getElementById("section1").classList.replace('oculto_section', 'container-slide-text');
+      document.getElementById("section2").classList.replace('MiniStock_container','oculto_section');
+      document.getElementById("section1").classList.replace('oculto_section', 'container-slide-text');
 
     
     }
-
-
-
 
 }
 /**********SLIDER SHOW*****************/
@@ -36,15 +33,15 @@ let array =["assets/image/Jumbotron.png","assets/image/stock.png","assets/image/
 
 
 function plusSlides(n) {
+
   showSlides(slideIndex += n);
+
 }
 
 
 showSlides();
 
-
-
- console.log(document.getElementsByClassName("article")[0].style.backgroundImage = "url('"+array[0]+ "')")
+//console.log(document.getElementsByClassName("article")[0].style.backgroundImage = "url('"+array[0]+ "')")
 
 function showSlides() {
 
@@ -61,6 +58,7 @@ function showSlides() {
        document.getElementsByClassName("article")[slideIndex-1].style.backgroundPosition = "center center"
        document.getElementsByClassName("article")[slideIndex-1].style.backgroundSize = "100% 100%"
        document.getElementsByClassName("article")[slideIndex-1].style.backgroundRepeat = "no-repea"
+       document.getElementsByClassName("article")[slideIndex-1].style.height = "-webkit-fill-available"
 
        setTimeout(showSlides, 8000); // Change image every 2 seconds
 
@@ -80,5 +78,6 @@ navLinks.forEach(link => {
     this.classList.add('active');
   });
 });
+
 
 /***************************************/

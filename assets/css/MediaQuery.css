@@ -1,49 +1,51 @@
+
+
 @media only screen and (max-width: 767px) {
   /* Estilos para dispositivos móviles */
 
-.text-article1{
-    font-size: 40px;
-    text-shadow: 0px 2px 8px rgba(119, 201, 248, 1);
-    text-align: center;
-    margin-bottom: 15px;
-}
+    .container-slide-text {
+        background: purple;
+        height: 86.5vh;
+    }
 
-
+    .text-article1{
+        font-size: 40px;
+        text-shadow: 0px 2px 8px rgba(119, 201, 248, 1);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+/*------------------*/
 .MiniStock_container {
-  background: grey;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-
+    height: 88vh;
+    background: pink;
+     
+   
 }
+
+
+
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Estilos para tabletas */
 
-.text-article1{
-    font-size: 60px;
-    text-shadow: 0px 2px 8px rgba(119, 201, 248, 1);
-    text-align: center;
-    margin-bottom: 15px;
-}
+    .container-slide-text {
+        background: red;
+        height: 80vh;
+    }
 
-
+    .text-article1{
+          font-size: 60px;
+          text-shadow: 0px 2px 8px rgba(119, 201, 248, 1);
+          text-align: center;
+          margin-bottom: 15px;
+    }
+/*------------------*/
 
 .MiniStock_container {
-  background: grey;
-/*  display: flex;
-  flex-direction:row;*/
-  width: 100%;
-  height: 80vh;
-
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 0px;
-
-
+    height: 88vh;
+    background: pink;
+   
 }
 
 /*
@@ -54,11 +56,11 @@ background: red;
 
 }
 */
-
-.MiniStock_Start-image{
+/*
+.MiniStock_Start{
 
  
-}
+}*/
 /*
 .MiniStock_Emprendedor_Pos{
 
@@ -66,45 +68,52 @@ background:blue;
 
 }
 */
+/*------------------*/
 
 
 }
+
 @media only screen and (min-width: 1025px) {
   /* Estilos para pantallas de escritorio */
 
-.text-article1{
-    font-size: 100px;
-    text-shadow: 0px 2px 8px rgba(119, 201, 248, 1);
-    text-align: center;
-    margin-bottom: 15px;
+.container-slide-text {
+    background: purple;
+    height: 91vh;
 }
-
+  .text-article1{
+      font-size: 100px;
+      text-shadow: 0px 2px 8px rgba(119, 201, 248, 1);
+      text-align: center;
+      margin-bottom: 15px;
+  }
 
 .MiniStock_container {
-  background: grey;
- /* display: flex;
-  flex-direction:row;*/
-  width: 100%;
-  height: 80vh;
-
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
+    height: 88vh;
+    background: pink;
+ 
 }
-/*
+
+/* 
+.MiniStock_container{
+background: red;
+}
+
+
+
 .MiniStock_Emprendedor {
-
-
 background: red;
 padding:50px;
 }
-.MiniStock_Emprendedor_Pos{
 
+
+.MiniStock_Emprendedor_Pos{
 background:blue;
 padding:50px;
 }
 
-*/
+
+/*------------------*/
+
+
 
 }
