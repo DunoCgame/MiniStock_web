@@ -1,7 +1,7 @@
 
 
 @media only screen and (max-width: 767px) {
-  /* Estilos para dispositivos móviles */
+    /* Estilos para dispositivos móviles */
 
     .container-slide-text {
         background: purple;
@@ -23,7 +23,18 @@
 }
 
 
-
+.btn-descarga {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid #4090FF;
+    color: #4090FF;
+    width: 300px;
+    position: absolute;
+    top: 79%;
+    left: 9%;
+}
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -48,6 +59,19 @@
    
 }
 
+.btn-descarga {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid #4090FF;
+    color: #4090FF;
+    width: 300px;
+    position: absolute;
+    top: 79%;
+    left: 9%;
+}
+
 /*
 .MiniStock_Emprendedor {
 
@@ -68,8 +92,19 @@ background:blue;
 
 }
 */
-/*------------------*/
-
+/*-------------
+.btn-descarga {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid #4090FF;
+    color: #4090FF;
+    width: 300px;
+    position: absolute;
+    top: 68%;
+    left: 31%;
+}-----*/
 
 }
 
